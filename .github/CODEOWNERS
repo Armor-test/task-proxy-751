@@ -1,0 +1,37 @@
+# CODEOWNERS file for task-proxy-751
+# Global owners - will be requested for all PRs
+* @Armor-test/dept-identity @Armor-test/squad-database @Armor-test/grp-ui
+
+# Directory ownership
+/migrations/ @Armor-test/grp-api @Armor-test/team-security
+/middleware/ @Armor-test/squad-search @Armor-test/squad-cloud @Armor-test/dept-release
+/data/ @Armor-test/squad-tooling @Armor-test/team-core
+/core/ @Armor-test/squad-product @Armor-test/unit-cloud
+/third_party/ @Armor-test/squad-performance @Armor-test/squad-cloud @Armor-test/squad-api
+/tools/ @Armor-test/squad-reporting @Armor-test/grp-reporting
+/config/ @Armor-test/squad-mobile @Armor-test/squad-ml
+/plugins/ @Armor-test/squad-cache @Armor-test/dept-reporting @Armor-test/dept-ui
+/api/ @Armor-test/team-logging @Armor-test/grp-integration
+/test/ @Armor-test/dept-reliability @Armor-test/team-governance
+/auth/ @Armor-test/squad-search @Armor-test/grp-integration @Armor-test/unit-test
+/services/ @Armor-test/dept-test @Armor-test/grp-reporting @Armor-test/squad-ml
+
+# File type ownership
+*.config @Armor-test/team-notifications @Armor-test/unit-cloud
+*.jsx @Armor-test/dept-notifications @Armor-test/squad-frontend
+*.properties @Armor-test/grp-payments @Armor-test/squad-ml
+*.ini @Armor-test/squad-product @Armor-test/team-security @Armor-test/squad-cloud
+*.java @Armor-test/grp-search @Armor-test/squad-frontend
+*.lock @Armor-test/grp-payments @Armor-test/team-notifications
+*.cs @Armor-test/grp-api @Armor-test/team-governance @Armor-test/dept-automation
+*.yml @Armor-test/grp-ui @Armor-test/squad-performance
+*.yaml @Armor-test/squad-research @Armor-test/squad-search @Armor-test/grp-ui
+*.toml @Armor-test/dept-ui @Armor-test/grp-ui @Armor-test/unit-devops
+*.scss @Armor-test/squad-product @Armor-test/dept-identity @Armor-test/dept-billing
+*.graphql @Armor-test/team-frontend @Armor-test/team-logging @Armor-test/squad-database
+
+# Security and special files
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+package.json @Armor-test/dependency-team @Armor-test/security
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
